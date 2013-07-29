@@ -8,6 +8,9 @@
       "all_frames": true, 
       "js": [
         "content.js"
+      ],
+      "css": [
+        "style.css"
       ]
     }
   ], 

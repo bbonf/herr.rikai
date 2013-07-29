@@ -1,0 +1,12 @@
+#herr_rikai_popup { 
+	background: #333; 
+	color:white; 
+	position: absolute; 
+	height: 150px; 
+	width: 300px; 
+	padding:10px; 
+	opacity: 0; 
+	z-index: 100; 
+	font-size:12px; 
+	transition: opacity 0.3s ease-out; 
+}

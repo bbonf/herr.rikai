@@ -8,24 +8,6 @@ var HerrRikai = (function() {
 	var _ready = false;
 	var POPUP_NAME = 'herr_rikai_popup';
 
-	var init_style = function() {
-		var style = document.createElement('style');
-		style.innerHTML = '#'+POPUP_NAME+' { \
-			background: #333; \
-			color:white; \
-			position: absolute; \
-			height: 150px; \
-			width: 300px; \
-			padding:10px; \
-			opacity: 0; \
-			z-index: 100; \
-			font-size:12px; \
-			transition: opacity 0.3s ease-out; \
-		}';
-
-		document.getElementsByTagName('head')[0].appendChild(style);
-	};
-
 	var load_dictionary = function() {
 		var req = new XMLHttpRequest();
 		req.open("GET", chrome.extension.getURL('dict.json'), false);
@@ -108,7 +90,6 @@ var HerrRikai = (function() {
 			return;
 		}
 
-		init_style();
 		load_dictionary();
 
 		var popup = document.createElement('div');
